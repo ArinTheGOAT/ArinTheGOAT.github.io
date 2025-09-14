@@ -163,40 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Quantum circuit simulator (basic)
-class QuantumCircuitSimulator {
-    constructor() {
-        this.gates = [];
-        this.qubits = 2;
-        this.init();
-    }
-
-    init() {
-        this.createCircuitInterface();
-    }
-
-    createCircuitInterface() {
-        // This would create an interactive quantum circuit builder
-        // For now, we'll add a simple demonstration
-        console.log('Quantum Circuit Simulator initialized');
-    }
-
-    addGate(gateType, qubitIndex) {
-        this.gates.push({ type: gateType, qubit: qubitIndex });
-        this.updateCircuit();
-    }
-
-    updateCircuit() {
-        // Update the visual representation of the circuit
-        console.log('Circuit updated:', this.gates);
-    }
-}
-
-// Initialize quantum circuit simulator
-document.addEventListener('DOMContentLoaded', () => {
-    new QuantumCircuitSimulator();
-});
-
 // Performance optimization: Throttle scroll events
 function throttle(func, limit) {
     let inThrottle;
