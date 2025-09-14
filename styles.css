@@ -505,116 +505,6 @@ section {
     line-height: 1.6;
 }
 
-/* Demo Section */
-.demo {
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.demo-container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.qubit-visualizer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 3rem;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.bloch-sphere {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sphere {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgba(0, 212, 255, 0.2), rgba(0, 0, 0, 0.8));
-    border: 2px solid rgba(0, 212, 255, 0.3);
-    position: relative;
-    animation: sphere-rotate 20s linear infinite;
-}
-
-.qubit-vector {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: #ff00ff;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 20px #ff00ff;
-    transition: all 0.3s ease;
-}
-
-@keyframes sphere-rotate {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
-}
-
-.controls h3 {
-    color: #ffffff;
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
-}
-
-.control-group {
-    margin-bottom: 1.5rem;
-}
-
-.control-group label {
-    display: block;
-    color: #b0b0b0;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.control-group input[type="range"] {
-    width: 100%;
-    height: 6px;
-    border-radius: 3px;
-    background: rgba(255, 255, 255, 0.1);
-    outline: none;
-    -webkit-appearance: none;
-}
-
-.control-group input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #00d4ff, #ff00ff);
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
-}
-
-.state-display {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 1rem;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    margin-top: 1rem;
-}
-
-.state-display p {
-    color: #ffffff;
-    font-family: 'Courier New', monospace;
-    font-size: 1.1rem;
-}
-
-#stateDisplay {
-    color: #00d4ff;
-    font-weight: bold;
-}
 
 /* Resources Section */
 .resources-grid {
@@ -839,15 +729,6 @@ section {
         height: 300px;
     }
 
-    .qubit-visualizer {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .sphere {
-        width: 250px;
-        height: 250px;
-    }
 
     .contact-content {
         grid-template-columns: 1fr;
